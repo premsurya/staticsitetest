@@ -19,7 +19,7 @@ phases:
       # - command
   build:
     commands:
-      # - command
+        - echo "success"
       # - command
   #post_build:
     #commands:
