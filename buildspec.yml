@@ -2,7 +2,5 @@ version: 0.2
 phases:
  build:
   commands:
-     - aws s3 cp index.html  s3://myteststatic.com
-     - aws s3 cp error.html  s3://myteststatic.com
-     - aws s3 cp assets/ s3://myteststatic.com --recursive
+     - aws s3 cp . s3://myteststatic.com --recursive --exclude '.git/*' --exclude '.md' --exclude 'buildspec.yml'
      - echo "success"
