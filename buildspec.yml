@@ -5,4 +5,4 @@ phases:
      - aws s3 cp index.html  s3://myteststatic.com
      - aws s3 cp error.html  s3://myteststatic.com
      - aws s3 cp assets/ s3://myteststatic.com --recursive
-   - echo "success"
+     - echo "success"
