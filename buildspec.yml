@@ -1,33 +1,9 @@
 version: 0.2
-
-#env:
-  #variables:
-     # key: "value"
-     # key: "value"
-  #parameter-store:
-     # key: "value"
-     # key: "value"
-
 phases:
-  #install:
-    #commands:
-      # - command
-      # - command
-  #pre_build:
-    #commands:
-      # - command
-      # - command
-   build:
-     commands:
-        - echo "success"
-      # - command
-  #post_build:
-    #commands:
-      # - command
-      # - command
-  artifacts:
-    files:
-        - index.html
-    # - location
-    discard-paths: yes
-  #base-directory: location
+ build:
+  commands:
+   - echo "success"
+ artifacts:
+  files:
+   - index.html
+  discard-paths: yes
