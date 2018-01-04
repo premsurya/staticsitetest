@@ -2,8 +2,8 @@ version: 0.2
 phases:
  build:
   commands:
-   - echo "success"
- artifacts:
-  files:
-   - index.html
-  discard-paths: yes
+   - echo "success1"
+artifacts:
+ files:
+  - index.html
+ discard-paths: yes
