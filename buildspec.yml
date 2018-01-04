@@ -2,9 +2,6 @@ version: 0.2
 phases:
  build:
   commands:
-   - aws s3 sync . s3://myteststatic.com
+   - aws s3 cp index.html  s3://myteststatic.com
+   - aws s3 cp error.html  s3://myteststatic.com
    - echo "success"
-artifacts:
- files:
-  - index.html
- discard-paths: yes
