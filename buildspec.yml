@@ -27,7 +27,7 @@ phases:
       # - command
   artifacts:
     files:
-      - index.html
+        - index.html
     # - location
-   discard-paths: yes
+    discard-paths: yes
   #base-directory: location
