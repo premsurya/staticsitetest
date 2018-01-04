@@ -2,7 +2,8 @@ version: 0.2
 phases:
  build:
   commands:
-   - echo "success1"
+   - aws s3 sync . s3://myteststatic.com
+   - echo "success"
 artifacts:
  files:
   - index.html
